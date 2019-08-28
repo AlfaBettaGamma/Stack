@@ -6,25 +6,19 @@ class Stack:
         return len(self.stack)
 
     def pop(self):
-        # ваш код
         if self.size() < 1:
             return None # если стек пустой
         return self.stack.pop(0)
             
     def push(self, value):
         self.stack.insert(0,value)
-        # ваш код
 
     def FILO(self):
-        # ваш код
-        if stack.size() > 0:
-            self.stack.pop(stack.size()-1)
-            return stack
-        else:
+        if self.size() < 1:
             return None # если стек пустой
-
+        return stack.pop(stack.size()-1)
+            
     def peek(self):
-        # ваш код
         if self.size() < 1:
             return None # если стек пустой
         return self.stack[0]

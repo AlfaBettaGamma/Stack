@@ -17,12 +17,10 @@ class Stack:
 
     def FILO(self):
         # ваш код
-        if stack.size() > 0:
-            self.stack.pop(stack.size()-1)
-            return stack
-        else:
+        if self.size() < 1:
             return None # если стек пустой
-
+        return stack.pop(stack.size()-1)
+            
     def peek(self):
         # ваш код
         if self.size() < 1:
